@@ -16,6 +16,7 @@
 def any_lowercase1(s):
     """Explain what is wrong, if anything, here.
     """
+    #islower() is to check whether ALL letters are lowercase, not just one
     for c in s:
         if c.islower():
             return True
@@ -26,6 +27,7 @@ def any_lowercase1(s):
 def any_lowercase2(s):
     """Explain what is wrong, if anything, here.
     """
+    #'c' will always return "True" (its a string)
     for c in s:
         if 'c'.islower():
             return 'True'
@@ -36,6 +38,7 @@ def any_lowercase2(s):
 def any_lowercase3(s):
     """Explain what is wrong, if anything, here.
     """
+    #returns result of last c in s
     for c in s:
         flag = c.islower()
     return flag
@@ -44,6 +47,7 @@ def any_lowercase3(s):
 def any_lowercase4(s):
     """Explain what is wrong, if anything, here.
     """
+    #Boolean statement returns inaccurate results
     flag = False
     for c in s:
         flag = flag or c.islower()
@@ -53,10 +57,12 @@ def any_lowercase4(s):
 def any_lowercase5(s):
     """Explain what is wrong, if anything, here.
     """
+    #This function does not allow any capitalized letters 
     for c in s:
         if not c.islower():
             return False
     return True
+
 
 
 ###############################################################################

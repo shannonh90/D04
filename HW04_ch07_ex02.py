@@ -21,9 +21,21 @@
 
 ###############################################################################
 # Imports
-
+import math
 
 # Body
+def eval_loop():
+	while True:
+		calculation = input("Enter a math function to be evaluated: ")
+		if calculation == "done":
+			break
+		else:
+			result = eval(calculation)
+			return result
+	return result
+
+#question - does the while loop here ensure the function keeps prompting the user?
+#unsure of WHILE's  need here. while WHAT is true?
 
 
 ###############################################################################
